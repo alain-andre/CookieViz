@@ -54,17 +54,20 @@ Il faut ensuite charger le repository dans votre dossier de projets et créer un
     sudo ln -s CookieViz /var/www/cookieviz
     
 
-Enfin, il est nécessaire de modifier les paramètres de connexion à la base de données dans les fichiers suivants :
+Enfin, il est nécessaire de modifier les paramètres de connexion à la base de données dans le fichier suivant :
 
-*   /var/www/cookieviz/soft/monitor_mitmdump.php
-*   /var/www/cookieviz/connect.php
+- /var/www/cookieviz/soft/.install
 
-Pour lancer la surveillance de l'utilisation des cookies, il faut alors exécuter les commandes suivantes dans un terminal :
-    
-    php /chemin vers le répertoire soft/monitor_mitmdump.php Pour la version mitmdump, l'application se comporte comme un proxy. Il est donc nécessaire de paramétrer le proxy soit au niveau du navigateur, soit au niveau du système. L'adresse du proxy est la suivante : localhost:8080
+Pour lancer la surveillance de l'utilisation des cookies, il suffit de lancer http://localhost/cookieviz/ dans un onglet de votre navigateur.
 
-Vous pouvez ensuite naviguer comme auparavant sur des sites web. 
-Vous pouvez constater le résultat en vous connectant avec un navigateur sur votre serveur web http://localhost/cookieviz/
+Vous pouvez ensuite naviguer comme auparavant sur des sites web sur les autres onglets de votre navigateur. 
+
+## TODO
+- [x] Faire en sorte de ne lancer que l'index.php de CookieViz et non lancer l'app en deux fois
+- [] Faire en sorte que la DB s'installe à la première utilisation.
+- [] Modifier les fichiers suivants afin de ne se connecter qu'une fois
+  - /var/www/cookieviz/soft/monitor_mitmdump.php
+  - /var/www/cookieviz/connect.php
 
  [1]: http://www.youtube.com/watch?v=5UJGlDPRLCw
  [2]: http://www.cnil.fr/vos-droits/vos-traces/les-cookies/telechargez-cookieviz/
