@@ -9,7 +9,7 @@ Analysez les interactions entre votre ordinateur, votre navigateur et des sites 
 
 Télécharger le fichier [setup.exe][3].
 
-# Pour déployer le logiciel sur Linux ou sur MAC
+# Déploiement sur Linux ou sur MAC
 
 ## Prérequis :
 
