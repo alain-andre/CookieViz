@@ -15,6 +15,11 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with CookieViz.  If not, see <http://www.gnu.org/licenses/>.
 -->
+
+<?php require_once('connect.php'); ?>
+<?php require_once('soft/monitor_mitmdump.php'); ?>
+
+
 <html>
 	<head>
 		<title>Cookie Viz</title>
